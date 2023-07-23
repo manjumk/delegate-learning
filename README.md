@@ -20,13 +20,16 @@ muldel("Test1");
 Multicast delegate makes implementation of observer design pattern.
 
 Generic Delegate: Generic Delegate was introduced in .NET 3.5 that don't require to define the delegate instance in order to invoke the methods.
-•	Predicate - The Predicate delegate defines a method that can be called on arguments and always returns Boolean type result.
+
+•Predicate - The Predicate delegate defines a method that can be called on arguments and always returns Boolean type result.
      Predicate<int> test = d => d > 5;
      Console.WriteLine($"predicate result: {test(7)}");
-•	Action - The Action delegate defines a method that can be called on arguments but does not return a result.
+
+•Action - The Action delegate defines a method that can be called on arguments but does not return a result.
      Action<string> actiontest = d => Console.WriteLine($"result: {d}");
      actiontest("Hello action delegate");
-•	Func - delegate defines a method that can be called on arguments and returns a result
+
+•Func - delegate defines a method that can be called on arguments and returns a result
      Func<int,int,int,int> functest=(p,t,r)=> p* t *r;
      int si = functest(10, 20, 30);
      Console.WriteLine($"func result: {si}");
